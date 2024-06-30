@@ -15,8 +15,8 @@ def bikes_da():
         bikes=pd.DataFrame()
         # for i in range(3):
         # bikes_temp = pd.read_csv(f"data\서울특별시 공공자전거 대여정보_201906_{i+1}.csv", encoding='cp949')
-        bikes_temp1 = pd.read_csv("https://drive.google.com/uc?id=1uhG-vQibMO4MYe8I8krs-tV_632eqrWZ", encoding='cp949')
-        bikes=pd.concat([bikes,bikes_temp1])  #,bikes_temp2,bikes_temp3
+        bikes = pd.read_csv("https://drive.google.com/uc?id=1uhG-vQibMO4MYe8I8krs-tV_632eqrWZ", encoding='cp949')
+        # bikes=pd.concat([bikes,bikes_temp1])  #,bikes_temp2,bikes_temp3
             
         #데이터 전처리
         bikes.isnull().sum()
