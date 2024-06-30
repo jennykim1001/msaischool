@@ -1,6 +1,8 @@
 import streamlit as st
 import bikes_da2
 
+st.set_page_config(page_title="따릉이")
+
 # 사이드바 화면
 st.sidebar.header("로그인")
 user_id = st.sidebar.text_input('아이디(ID) 입력', value="streamlit", max_chars=15)
